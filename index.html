@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <img src="img.png">
+    <img src="img2.png">
 
 
   </body>
