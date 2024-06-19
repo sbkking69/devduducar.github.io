@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+#search {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: calc(100% / 2 - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card .price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card .reviews {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.card .rating {
+    color: #ffa500;
+    margin-bottom: 10px;
+}
+
+.card button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card button:hover {
+    background-color: #218838;
+}
+
+#load-more {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+#load-more:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    header div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: calc(100% - 40px);
+    }
+}
+
+@media (min-width: 769px) {
+    #search {
+        width: 50%;
+    }
+
+    header div {
+        flex-direction: row;
+    }
+
+    .card {
+        width: calc(100% / 4 - 40px);
+    }
+}
